@@ -4,13 +4,27 @@
 using namespace cocos2d;
 using namespace CocosDenshion;
 
+#include "list.h"
+#include "JewelConfig.h"
+
+#include "JewelMainLayer.h"
+
+enum testEnum {
+    one = 1<<0,
+    two = 1<<1,
+    three = 1<<2,
+    four = 1<<3,
+    };
+
 CCScene* HelloWorld::scene()
 {
     // 'scene' is an autorelease object
     CCScene *scene = CCScene::create();
     
     // 'layer' is an autorelease object
-    HelloWorld *layer = HelloWorld::create();
+//    HelloWorld *layer = HelloWorld::create();
+    
+    JewelMainLayer * layer = JewelMainLayer::create();
 
     // add layer as a child to scene
     scene->addChild(layer);
@@ -28,50 +42,80 @@ bool HelloWorld::init()
     {
         return false;
     }
+    
+    
+//    CCLog("%f", CC_RADIANS_TO_DEGREES(ccpToAngle(ccpSub(ccp(0,0),ccp(0,10)))) );
+//    CCLog("%f", CC_RADIANS_TO_DEGREES(ccpToAngle(ccpSub(ccp(0,10),ccp(0,0)))) );
+//    CCLog("%f", CC_RADIANS_TO_DEGREES(ccpToAngle(ccpSub(ccp(10,0),ccp(0,0)))) );
+//    CCLog("%f", CC_RADIANS_TO_DEGREES(ccpToAngle(ccpSub(ccp(0,-10),ccp(0,0)))) );
+//    CCLog("%f", CC_RADIANS_TO_DEGREES(ccpToAngle(ccpSub(ccp(-10,0),ccp(0,0)))) );
+    
+    
+//    CCLog("%d",1%2);
+//    CCLog("%d",3%2);
+//    CCLog("%d",5%2);
+//    CCLog("%d",6%2);
+//    CCLog("%d",8%2);
+//    
+//    CCLog("%d",3%3);
+//    CCLog("%d",6%3);
+//    CCLog("%d",9%3);
+    unsigned long long int x = (1<<32)-1;
+    CCLog("%ld",x);
+    CCLog("%ld",INTMAX_MAX);
+//    CCLog("%d",two);
+//    CCLog("%d",three);
+//    CCLog("%d",four);
+//
+//    unsigned int flag = one | two;
+//    
+//    CCLog("%d",flag & one);
+//    CCLog("%d",flag & two);
+//    CCLog("%d",flag & three);
 
-    /////////////////////////////
-    // 2. add a menu item with "X" image, which is clicked to quit the program
-    //    you may modify it.
-
-    // add a "close" icon to exit the progress. it's an autorelease object
-    CCMenuItemImage *pCloseItem = CCMenuItemImage::create(
-                                        "CloseNormal.png",
-                                        "CloseSelected.png",
-                                        this,
-                                        menu_selector(HelloWorld::menuCloseCallback) );
-    pCloseItem->setPosition( ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20) );
-
-    // create menu, it's an autorelease object
-    CCMenu* pMenu = CCMenu::create(pCloseItem, NULL);
-    pMenu->setPosition( CCPointZero );
-    this->addChild(pMenu, 1);
-
-    /////////////////////////////
-    // 3. add your codes below...
-
-    // add a label shows "Hello World"
-    // create and initialize a label
-    CCLabelTTF* pLabel = CCLabelTTF::create("Hello World", "Thonburi", 34);
-
-    // ask director the window size
-    CCSize size = CCDirector::sharedDirector()->getWinSize();
-
-    // position the label on the center of the screen
-    pLabel->setPosition( ccp(size.width / 2, size.height - 20) );
-
-    // add the label as a child to this layer
-    this->addChild(pLabel, 1);
-
-    // add "HelloWorld" splash screen"
-    CCSprite* pSprite = CCSprite::create("HelloWorld.png");
-
-    // position the sprite on the center of the screen
-    pSprite->setPosition( ccp(size.width/2, size.height/2) );
-
-    // add the sprite as a child to this layer
-    this->addChild(pSprite, 0);
+    
+//    std::list<int> x;
+//
+//    x.push_back(1);
+//    x.push_back(2);
+//    x.push_back(3);
+//    x.push_back(4);
+//    x.push_back(5);
+//    x.push_back(6);
+//    x.push_back(7);
+//    
+//    
+//    std::list<int>::iterator theIterator;
+//    
+//    for (theIterator = x.begin();
+//         theIterator != x.end();
+//         theIterator++) {
+//        
+//        
+//        if (*theIterator%2 ==0) {
+//            x.remove(*theIterator);
+//        }
+//    }
+//    
+//    
+//    for (theIterator = x.begin();
+//         theIterator != x.end();
+//         theIterator++) {
+//        
+//        printf("%d ",*theIterator);
+//    }
+//    printf("\n");
     
     return true;
+}
+
+void HelloWorld::hebinglist(std::list<int> &list){
+    
+    std::list<int> x;
+    x.push_back(1);
+    
+    list.merge(x);
+    x.clear();
 }
 
 void HelloWorld::menuCloseCallback(CCObject* pSender)

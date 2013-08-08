@@ -567,7 +567,7 @@ static EAGLView *view = 0;
 
 - (NSString *)textInRange:(UITextRange *)range;
 {
-    CCLOG("textInRange");
+//    CCLOG("textInRange");
     return @"";
 }
 - (void)replaceRange:(UITextRange *)range withText:(NSString *)theText;
@@ -636,40 +636,40 @@ static EAGLView *view = 0;
 
 - (UITextRange *)textRangeFromPosition:(UITextPosition *)fromPosition toPosition:(UITextPosition *)toPosition;
 {
-    CCLOG("textRangeFromPosition");
+//    CCLOG("textRangeFromPosition");
     return nil;
 }
 - (UITextPosition *)positionFromPosition:(UITextPosition *)position offset:(NSInteger)offset;
 {
-    CCLOG("positionFromPosition");
+//    CCLOG("positionFromPosition");
     return nil;
 }
 - (UITextPosition *)positionFromPosition:(UITextPosition *)position inDirection:(UITextLayoutDirection)direction offset:(NSInteger)offset;
 {
-    CCLOG("positionFromPosition");
+//    CCLOG("positionFromPosition");
     return nil;
 }
 
 /* Simple evaluation of positions */
 - (NSComparisonResult)comparePosition:(UITextPosition *)position toPosition:(UITextPosition *)other;
 {
-    CCLOG("comparePosition");
+//    CCLOG("comparePosition");
     return (NSComparisonResult)0;
 }
 - (NSInteger)offsetFromPosition:(UITextPosition *)from toPosition:(UITextPosition *)toPosition;
 {
-    CCLOG("offsetFromPosition");
+//    CCLOG("offsetFromPosition");
     return 0;
 }
 
 - (UITextPosition *)positionWithinRange:(UITextRange *)range farthestInDirection:(UITextLayoutDirection)direction;
 {
-    CCLOG("positionWithinRange");
+//    CCLOG("positionWithinRange");
     return nil;
 }
 - (UITextRange *)characterRangeByExtendingPosition:(UITextPosition *)position inDirection:(UITextLayoutDirection)direction;
 {
-    CCLOG("characterRangeByExtendingPosition");
+//    CCLOG("characterRangeByExtendingPosition");
     return nil;
 }
 
@@ -677,12 +677,12 @@ static EAGLView *view = 0;
 
 - (UITextWritingDirection)baseWritingDirectionForPosition:(UITextPosition *)position inDirection:(UITextStorageDirection)direction;
 {
-    CCLOG("baseWritingDirectionForPosition");
+//    CCLOG("baseWritingDirectionForPosition");
     return UITextWritingDirectionNatural;
 }
 - (void)setBaseWritingDirection:(UITextWritingDirection)writingDirection forRange:(UITextRange *)range;
 {
-    CCLOG("setBaseWritingDirection");
+//    CCLOG("setBaseWritingDirection");
 }
 
 #pragma mark Geometry

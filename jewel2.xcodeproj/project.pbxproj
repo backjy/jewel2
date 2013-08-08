@@ -266,6 +266,13 @@
 		2D027CF8174C655100A44254 /* cpVect.c in Sources */ = {isa = PBXBuildFile; fileRef = 2D027CF7174C655100A44254 /* cpVect.c */; };
 		2D027CFF174C655100A44254 /* AppDelegate.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D027CFE174C655100A44254 /* AppDelegate.cpp */; };
 		2D027D02174C655100A44254 /* HelloWorldScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D027D01174C655100A44254 /* HelloWorldScene.cpp */; };
+		2D027D14174C6F2E00A44254 /* JewelMainLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D027D12174C6F2E00A44254 /* JewelMainLayer.cpp */; };
+		2D027D18174C7B1A00A44254 /* JewelDatahandle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D027D16174C7B1900A44254 /* JewelDatahandle.cpp */; };
+		2D027D1B174C942B00A44254 /* JewelSprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D027D19174C942B00A44254 /* JewelSprite.cpp */; };
+		2D19BF3117509C5C00FE9915 /* bugs in Resources */ = {isa = PBXBuildFile; fileRef = 2D19BF3017509C5C00FE9915 /* bugs */; };
+		2D5B5CBB174DC50900D53023 /* JewelResources.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B5CB9174DC50900D53023 /* JewelResources.plist */; };
+		2D5B5CBC174DC50900D53023 /* JewelResources.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D5B5CBA174DC50900D53023 /* JewelResources.png */; };
+		2D5B5CC0174DE1BD00D53023 /* CCWaitAction.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2D5B5CBE174DE1BD00D53023 /* CCWaitAction.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -832,6 +839,18 @@
 		2D027CFE174C655100A44254 /* AppDelegate.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = Classes/AppDelegate.cpp; sourceTree = "<group>"; };
 		2D027D00174C655100A44254 /* HelloWorldScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = HelloWorldScene.h; path = Classes/HelloWorldScene.h; sourceTree = "<group>"; };
 		2D027D01174C655100A44254 /* HelloWorldScene.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = HelloWorldScene.cpp; path = Classes/HelloWorldScene.cpp; sourceTree = "<group>"; };
+		2D027D12174C6F2E00A44254 /* JewelMainLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JewelMainLayer.cpp; sourceTree = "<group>"; };
+		2D027D13174C6F2E00A44254 /* JewelMainLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JewelMainLayer.h; sourceTree = "<group>"; };
+		2D027D15174C794700A44254 /* JewelConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JewelConfig.h; sourceTree = "<group>"; };
+		2D027D16174C7B1900A44254 /* JewelDatahandle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JewelDatahandle.cpp; sourceTree = "<group>"; };
+		2D027D17174C7B1900A44254 /* JewelDatahandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JewelDatahandle.h; sourceTree = "<group>"; };
+		2D027D19174C942B00A44254 /* JewelSprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JewelSprite.cpp; sourceTree = "<group>"; };
+		2D027D1A174C942B00A44254 /* JewelSprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JewelSprite.h; sourceTree = "<group>"; };
+		2D19BF3017509C5C00FE9915 /* bugs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = bugs; sourceTree = "<group>"; };
+		2D5B5CB9174DC50900D53023 /* JewelResources.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = JewelResources.plist; sourceTree = "<group>"; };
+		2D5B5CBA174DC50900D53023 /* JewelResources.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JewelResources.png; sourceTree = "<group>"; };
+		2D5B5CBE174DE1BD00D53023 /* CCWaitAction.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCWaitAction.cpp; sourceTree = "<group>"; };
+		2D5B5CBF174DE1BD00D53023 /* CCWaitAction.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCWaitAction.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -895,6 +914,7 @@
 				2D0279BC174C654C00A44254 /* libs */,
 				2D027CFC174C655100A44254 /* Classes */,
 				2D027CFA174C655100A44254 /* Supporting Files */,
+				2D19BF3017509C5C00FE9915 /* bugs */,
 			);
 			path = jewel2;
 			sourceTree = "<group>";
@@ -905,6 +925,8 @@
 				2D02799C174C654C00A44254 /* CloseNormal.png */,
 				2D02799E174C654C00A44254 /* CloseSelected.png */,
 				2D0279A0174C654C00A44254 /* Default.png */,
+				2D5B5CB9174DC50900D53023 /* JewelResources.plist */,
+				2D5B5CBA174DC50900D53023 /* JewelResources.png */,
 				2D0279A2174C654C00A44254 /* HelloWorld.png */,
 				2D0279A4174C654C00A44254 /* Icon-72.png */,
 				2D0279A6174C654C00A44254 /* Icon-Small-50.png */,
@@ -1976,12 +1998,30 @@
 		2D027CFC174C655100A44254 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2D027D11174C6F2E00A44254 /* JewelClasses */,
 				2D027CFD174C655100A44254 /* AppDelegate.h */,
 				2D027CFE174C655100A44254 /* AppDelegate.cpp */,
 				2D027D00174C655100A44254 /* HelloWorldScene.h */,
 				2D027D01174C655100A44254 /* HelloWorldScene.cpp */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		2D027D11174C6F2E00A44254 /* JewelClasses */ = {
+			isa = PBXGroup;
+			children = (
+				2D027D12174C6F2E00A44254 /* JewelMainLayer.cpp */,
+				2D027D13174C6F2E00A44254 /* JewelMainLayer.h */,
+				2D027D15174C794700A44254 /* JewelConfig.h */,
+				2D027D16174C7B1900A44254 /* JewelDatahandle.cpp */,
+				2D027D17174C7B1900A44254 /* JewelDatahandle.h */,
+				2D027D19174C942B00A44254 /* JewelSprite.cpp */,
+				2D027D1A174C942B00A44254 /* JewelSprite.h */,
+				2D5B5CBE174DE1BD00D53023 /* CCWaitAction.cpp */,
+				2D5B5CBF174DE1BD00D53023 /* CCWaitAction.h */,
+			);
+			name = JewelClasses;
+			path = Classes/JewelClasses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -2047,6 +2087,9 @@
 				2D0279B1174C654C00A44254 /* iTunesArtwork in Resources */,
 				2D027A4D174C654D00A44254 /* ChangeLog in Resources */,
 				2D027BB7174C655000A44254 /* project.pbxproj in Resources */,
+				2D5B5CBB174DC50900D53023 /* JewelResources.plist in Resources */,
+				2D5B5CBC174DC50900D53023 /* JewelResources.png in Resources */,
+				2D19BF3117509C5C00FE9915 /* bugs in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2293,6 +2336,10 @@
 				2D027CF8174C655100A44254 /* cpVect.c in Sources */,
 				2D027CFF174C655100A44254 /* AppDelegate.cpp in Sources */,
 				2D027D02174C655100A44254 /* HelloWorldScene.cpp in Sources */,
+				2D027D14174C6F2E00A44254 /* JewelMainLayer.cpp in Sources */,
+				2D027D18174C7B1A00A44254 /* JewelDatahandle.cpp in Sources */,
+				2D027D1B174C942B00A44254 /* JewelSprite.cpp in Sources */,
+				2D5B5CC0174DE1BD00D53023 /* CCWaitAction.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2430,6 +2477,7 @@
 				2D027D07174C655100A44254 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
