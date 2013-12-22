@@ -4,7 +4,6 @@
 using namespace cocos2d;
 using namespace CocosDenshion;
 
-#include "list.h"
 #include "JewelConfig.h"
 
 #include "JewelMainLayer.h"
