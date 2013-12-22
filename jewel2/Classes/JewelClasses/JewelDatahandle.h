@@ -11,7 +11,6 @@
 
 #include "cocos2d.h"
 
-#include "list.h"
 #include "JewelConfig.h"
 
 using namespace cocos2d;
